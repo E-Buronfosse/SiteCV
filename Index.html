@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="styles/styles.js"></script> 
 </head>
 <body>
     <div class="container-fluid main-columns">
@@ -35,7 +36,12 @@
                         <li>Jeux d'échecs - pratique régulière</li>
                     </ul>
                 </div>
-                <i class="fab fa-linkedin"></i>
+                <div id="networks">
+                    <a href="https://www.linkedin.com/in/etienneburonfosse-0a256212a/" target="_blank" id="link" alt="lien linkedin">
+                        <img src="img/linkedin.png" id="imgLinkedin">
+                        <p>Etienne Buronfosse</p>
+                    </a>
+                </div>
             </div>
             <div class="col-4" id="second-col">
                 <div id="cadre">
@@ -45,6 +51,8 @@
                     <h3>Développeur Full Stack en 2ème année <span id="subt">- Recherche contrat d'alternance jusqu'au 31 Août 2021</span><span id="rythm"> (Rythme : 3 semaines entreprise / 2 semaines école)</span></h3>
                 </div>
                 <div id="formation">
+                    <h3>Formations</h3>
+                    <hr>
                     <div>
                         <h5><span class="entitled">Développeur informatique</span><br />
                         <span class="scool">Coding Factory-  Itescia Ecole de la CCI de Paris Ile-de-France</span>
@@ -69,8 +77,11 @@
                 </div>
             </div>
             <div class="col-4" id="third-col">
+                <div id="menu">
+                    <button id="buttonSkills" onclick="pressedSkills()">SKILLS</button>
+                    <button id="buttonExperiences" class="selected" onclick="pressedExperiences()">EXPERIENCES</button>
+                </div>
                 <div id="skills" class="container">
-                    <h2>SKILLS</h2>
                     <div class="row space">
                         <div class="col-6">
                             <h4>HTML/CSS</h4>
@@ -254,6 +265,26 @@
                     <h4>ANGULAR</h4>
                     <h4>Mobiles</h4>
                     <h4>Réseaux</h4>
+                </div>
+                <div id="experiences" class="container">
+                    <div>
+                        <h5><span class="entitled">Intégrateur Web</span><br />
+                        <span class="scool">SCRIPTO SENSU</span>
+                        <span class="location">Paris 10ème</span>
+                        <span class="date"> De Janvier 2016 à Mars 2016</span></h5>
+                        <p>Intégrateur web dans une société d'édition, j'ai réalisé des mises à jour et des maintenances de sites et de newsletters principalement, principaux languages utilisés : HTML/CSS</p>
+                    </div>
+                    <div>
+                        <h5>Exemples de projets réalisés</h5>
+                        <ul>
+                            <li>Réalisation d'une application de gestion de projets/employés pour un cabinet d'architecte, possibilité d'ajouter/supprimer des architectes/clients, les assigner à un projet, attribuer des matériaux à un projet, messagerie intégrée à l'application. Réalisé en Java Swing, interaction avec base de donnée MYSQL</li>
+                            <li>Réalisation d'un jeu d'échecs en Java, ressources graphiques fournies, codage du comportement des pièces, gestion du chrono</li>
+                            <li>Reproduction d'un site CV modèle en HTML/CSS</li>
+                            <li>Bataille navale en ligne de commande en PHP,  positionnement des bateaux, combats contre l'IA</li>
+                            <li>Réalisation d'un jeu de combat ligne de commande en PHP, création du personnage, attributs et mode duel entre personnages</li>
+                            <li>Codage d'une application VueJS utilisant une API pour que l'utilisateur puisse chercher des cocktails selon les alcools, les ingrédients, le nom, affichage des cocktails en temps réel</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

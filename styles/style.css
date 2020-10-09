@@ -84,6 +84,14 @@ body {
     letter-spacing: 2px;
     text-align: center;
 }
+#formation h3 {
+    letter-spacing: 2px;;
+    text-align: center;
+}
+#formation hr {
+    width: 80%;
+    border: solid #212529 1px;
+}
 .entitled {
     font-weight: bold;
 }
@@ -118,4 +126,51 @@ body {
 }
 .space {
     margin-top:5px;
+}
+#imgLinkedin {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 10px;
+}
+#networks {
+    margin-top: 50px;
+}
+#link {
+    display: flex;
+    flex-direction: row;
+    color: #F4F4F6;
+}
+#menu {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#menu button {
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 10px;
+    outline: 0;
+    cursor: pointer;
+}
+#menu button:hover{
+    background: #212529;
+    color: #F4F4F6;
+    transition: 0.2s;
+}
+#skills {
+    display: none;
+}
+#experiences {
+    display: block;
+}
+.selected {
+    background: #212529;
+    color: #F4F4F6;
+}
+.nonSelected {
+    background: none;
+    color: #212529;
 }
